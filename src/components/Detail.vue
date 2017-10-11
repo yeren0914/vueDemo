@@ -2,11 +2,9 @@
 
 <template>
   <div class="hello">
-   login
+   msg
    <div class="div">
-      <input type="text"  v-model="username"  />
-       <input type="text"  v-model="userpwd"  />
-       <button @click="plus">提交数据</button>
+      详情信息
    </div>
   </div>
 </template>
@@ -16,15 +14,12 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      username: '',
-      userpwd: ''
+      msg: 'Welcome to Your Vue.js App'
     }
   },
   methods:{
      plus: function () {
-          this.$router.push('/detail');
-          console.log(this.$router);
+          console.log(11)
      }
   }
 }
